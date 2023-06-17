@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.2",
+    "@types/node": "^18",
+    "eslint": "^8.43.0",
+    "nuxt": "^3.5.2",
+    "video.js": "^8.3.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.354.0",
+    "netlify-cli": "^15.6.0",
+    "yarn": "^1.22.19"
+  }
+}
