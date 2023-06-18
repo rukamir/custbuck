@@ -1,11 +1,14 @@
 <template>
     <div>
         <div>JimmyFlix</div>
-      <NuxtLink v-for="vid in vidlis" :to="`/video/${vid}`">{{ vid }}</NuxtLink>
+        <div v-for="vid in vidlis">
+            <NuxtLink :to="`/video/${vid}`">{{ vid }}</NuxtLink>
+        </div>
     </div>
 </template>
   
 <script setup>
 const { data: vidlis } = await useFetch('/api/videos')
+
 
 </script>
