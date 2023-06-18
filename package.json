@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.354.0",
+    "aws-crt": "^1.15.18",
     "netlify-cli": "^15.6.0",
     "yarn": "^1.22.19"
   }
