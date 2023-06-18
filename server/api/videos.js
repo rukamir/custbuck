@@ -3,11 +3,13 @@
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 
 export default defineEventHandler(async () => {
-  console.log(process.env)
+  const { accessKeyId, secretAccessKey } = useRuntimeConfig()
+
   var client = new S3Client({
+
     credentials: {
-      accessKeyId: process.env.accessKeyId,
-      secretAccessKey: process.env.secretAccessKey
+      accessKeyId,
+      secretAccessKey
     },
     // defaultsMode: "",
     disableHostPrefix: true,
