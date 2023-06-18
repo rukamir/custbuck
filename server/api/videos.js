@@ -1,20 +1,21 @@
 // ES5 example
 // ES6+ example
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
-var client = new S3Client({
-  credentials: {
-    accessKeyId: process.env.accessKeyId,
-    secretAccessKey: process.env.secretAccessKey
-  },
-  // defaultsMode: "",
-  disableHostPrefix: true,
-  disableMultiregionAccessPoints: true,
-  endpoint: "https://custbuck-a-dev.nyc3.digitaloceanspaces.com",
-  logger: "error",
-  tls: true
-})
 
 export default defineEventHandler(async () => {
+  var client = new S3Client({
+    credentials: {
+      accessKeyId: process.env.accessKeyId,
+      secretAccessKey: process.env.secretAccessKey
+    },
+    // defaultsMode: "",
+    disableHostPrefix: true,
+    disableMultiregionAccessPoints: true,
+    endpoint: "https://custbuck-a-dev.nyc3.digitaloceanspaces.com",
+    logger: "error",
+    tls: true
+  })
+  
   const input = { // ListObjectsV2Request
     Bucket: "custbuck-a-dev", // required
     // Delimiter: "STRING_VALUE",
