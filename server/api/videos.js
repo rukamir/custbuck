@@ -30,7 +30,7 @@ export default defineEventHandler(async () => {
   };
   const command = new ListObjectsV2Command(input);
   const response = await client.send(command);
-    console.log(response["Contents"])
+    // console.log(response["Contents"])
     return response["Contents"].map(vid => vid["Key"]
     )
   })
