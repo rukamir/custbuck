@@ -720,6 +720,17 @@
     "@aws-sdk/types" "3.347.0"
     tslib "^2.5.0"
 
+"@aws-sdk/signature-v4-crt@^3.354.0":
+  version "3.354.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/signature-v4-crt/-/signature-v4-crt-3.354.0.tgz#0bf549ffb10e8b36e09987487954ad1afcaabdd7"
+  integrity sha512-77AHvQ+7OEuoCr510YrLZYdmOsYcW2xZ5GHnS2v187qr7zSIbg019teRuz95YipGckEbWKVjVTPtA3uPgX3ieQ==
+  dependencies:
+    "@aws-sdk/querystring-parser" "3.347.0"
+    "@aws-sdk/signature-v4" "3.354.0"
+    "@aws-sdk/util-middleware" "3.347.0"
+    aws-crt "^1.15.9"
+    tslib "^2.5.0"
+
 "@aws-sdk/signature-v4-multi-region@3.354.0":
   version "3.354.0"
   resolved "https://registry.yarnpkg.com/@aws-sdk/signature-v4-multi-region/-/signature-v4-multi-region-3.354.0.tgz#d02f6584f00621f3aad05ffe9b5b24f65348a35c"
@@ -3723,7 +3734,7 @@ avvio@^8.2.0:
     debug "^4.0.0"
     fastq "^1.6.1"
 
-aws-crt@^1.15.18:
+aws-crt@^1.15.18, aws-crt@^1.15.9:
   version "1.15.18"
   resolved "https://registry.yarnpkg.com/aws-crt/-/aws-crt-1.15.18.tgz#ab2ca9b67cdc466a33388ec9b5b9c2dd6e58e5e9"
   integrity sha512-N66E/3tvkvFjGIcCXf4tZBakvGCUBMdxkJ7l1Hnwr2biW5AL55uTI7ww+P003XXxP1Njm494EHdC+UmYvZeXYw==
