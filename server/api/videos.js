@@ -3,6 +3,7 @@
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 
 export default defineEventHandler(async () => {
+  console.log(process.env)
   var client = new S3Client({
     credentials: {
       accessKeyId: process.env.accessKeyId,
