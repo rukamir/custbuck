@@ -8,16 +8,14 @@
         width="640"
         height="264"
         data-setup="{}">
-            <source :src="`https://custbuck-a-dev.nyc3.cdn.digitaloceanspaces.com/${videoid}`" type="video/mp4" />
+            <source :src="`https://custbuck-a-dev.nyc3.cdn.digitaloceanspaces.com/${vidid}`" type="video/mp4" />
     </video>
     </div>
 </template>
 
 <script setup>
 const route = useRoute()
-
-// When accessing /posts/1, route.params.id will be 1
-console.log(route.params.id)
-const { data: videoid } = await useFetch('/api/videos')
+console.log(route.params.video)
+const vidid = route.params.video
 
 </script>
