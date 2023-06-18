@@ -31,7 +31,7 @@ export default defineEventHandler(async () => {
   const command = new ListObjectsV2Command(input);
   const response = await client.send(command);
     // console.log(response["Contents"])
-    return JSON.parse(response["Contents"].map(vid => vid["Key"])
+    return JSON.stringify(response["Contents"].map(vid => vid["Key"])
     )
   })
   
